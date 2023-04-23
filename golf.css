@@ -1,0 +1,130 @@
+body{
+    height: 100vh;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.content{
+    width: 360px;
+    height: 360px;
+    background: #000;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden
+
+}
+.content span{
+    background: url(baron.jpg);
+    height: 100%;
+    background-size: 368px;
+    left: 0;
+    background-repeat: no-repeat;
+    position: absolute;
+    transition: 3s;
+}
+
+.content span:nth-child(1){
+    z-index:10;
+    width: 25%;
+    transition-delay:.5s;
+}
+
+ .content span:nth-child(2){
+    z-index: 9;
+    width: 50%;
+    transition-delay: 1s;
+
+}
+
+.content span:nth-child(3){
+    z-index: 8;
+    width: 75%;
+    transition-delay: 1.5s;
+
+}
+
+.content span:nth-child(4){
+    z-index: 7;
+    width: 100%;
+    transition-delay: 2s;
+    
+
+} 
+
+.content:hover span  {
+    transform: translateY(-100%);
+    transition: 3s;
+
+}
+
+
+.content:hover span:nth-child(1) {
+      
+    transition-delay: 0.5s;
+
+}
+
+.content:hover span:nth-child(2) {
+      
+    transition-delay: 1s;
+
+}
+
+.content:hover span:nth-child(3) {
+      
+    transition-delay: 1.5s;
+
+}
+
+.content:hover span:nth-child(4) {
+      
+    transition-delay: 2s;
+
+}
+
+.div{
+    height:100%;
+    background: green;
+    transition: 3s;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    transform: translateY(100%);
+}
+h2{
+    color: white;
+    text-align: center;
+}
+
+p{
+    color: white;
+    text-align: center;
+}
+
+
+.content:hover .div{
+    
+   transform:translateY(0%);
+    transition-delay:3s;
+   
+}
+.gee{width: 450px;
+     height: 150px;
+     background: blue;
+     position: absolute;
+     top: 0;
+     border-radius: 10px;
+     text-align: center;
+
+
+}
+.w,.h{
+    color: white;
+    font-size: 25px;
+    font-weight: 800;
+    text-shadow: -2px -2px 3px rgb(0, 0, 0);
+}
